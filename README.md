@@ -37,14 +37,12 @@ Configure your corporate remote state components before initialization within th
 Tailor the environment parameters via standard input values without altering the underlying resource code logic:
 
 | Variable Name          | Description                                            | Default / Requirement                                         |
-| :--------------------- | :----------------------------------------------------- | :------------------------------------------------------------ | --- |
+| :--------------------- | :----------------------------------------------------- | :------------------------------------------------------------ |
 | `aws_region`           | Target AWS geographical deployment region              | `"eu-central-1"`                                              |
 | `vpc_cidr`             | Core private IP network allocation range               | _User Input Required (e.g. "10.0.0.0/16")_                    |
 | `public_subnet_cidrs`  | Array of 2 network ranges for public routing layers    | _User Input Required (e.g. ["10.0.1.0/24", "10.0.2.0/24"])_   |
 | `private_subnet_cidrs` | Array of 2 network ranges for private isolation layers | _User Input Required (e.g. ["10.0.10.0/24", "10.0.20.0/24"])_ |
-| `instance_type`        | Compute hardware footprint sizing specification        | `"t3.micro"`                                                  |     |
-
----
+| `instance_type`        | Compute hardware footprint sizing specification        | `"t3.micro"`                                                  |
 
 ## Deployment Lifecycle Sequence
 
